@@ -1,6 +1,8 @@
 const toggleSwitch = document.querySelector('#toggle');
 const video = document.querySelector('#myVideo');
+
 toggleSwitch.addEventListener('change', toggleDarkMode);
+
 function toggleDarkMode() {
   if (toggleSwitch.checked) {
     document.body.classList.add('dark-mode');
@@ -8,11 +10,16 @@ function toggleDarkMode() {
     document.body.classList.remove('dark-mode');
   }
 }
+
+// Set the video to autoplay and loop
+video.autoplay = true;
+video.loop = true;
+
 video.addEventListener('timeupdate', function() {
   const currentTime = video.currentTime;
   const hours = new Date().getHours();
   const minutes = new Date().getMinutes();
-  if (hours === 08 && minutes === 12 && currentTime >= 492 && currentTime < 493) {
+  if (hours === 8 && minutes === 12 && currentTime >= 492 && currentTime < 493) {
     video.pause();
     setTimeout(function() {
       video.play();
