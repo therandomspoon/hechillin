@@ -11,10 +11,6 @@ function toggleDarkMode() {
   }
 }
 
-// Set the video to autoplay and loop
-video.autoplay = true;
-video.loop = true;
-
 video.addEventListener('timeupdate', function() {
   const currentTime = video.currentTime;
   const hours = new Date().getHours();
