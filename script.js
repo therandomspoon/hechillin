@@ -19,5 +19,3 @@ video.addEventListener('timeupdate', function() {
     }, 60000);
   }
 });
-var vid = document.getElementById("myVideo");
-vid.loop = true;
