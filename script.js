@@ -10,11 +10,13 @@ function toggleDarkMode() {
     document.body.classList.remove('dark-mode');
   }
 }
+
 video.addEventListener('timeupdate', function() {
   const currentTime = video.currentTime;
   const hours = new Date().getHours();
   const minutes = new Date().getMinutes();
-  if (hours === 16 && minutes === 56 && currentTime >= 1016 && currentTime < 1017) {
+  const currentSeconds = (hours * 60 * 60) + (minutes * 60) + Math.floor(currentTime);
+  if (currentSeconds >= 964 and currentSeconds < 965) {
     video.pause();
     setTimeout(function() {
       video.play();
