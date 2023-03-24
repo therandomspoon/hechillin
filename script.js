@@ -15,7 +15,7 @@ video.addEventListener('timeupdate', function() {
   const currentTime = video.currentTime;
   const hours = new Date().getHours();
   const minutes = new Date().getMinutes();
-  if (hours === 08 && minutes === 13 && currentTime >= 493 && currentTime < 494) {
+  if (hours === 08 && minutes === 15 && currentTime >= 495 && currentTime < 496) {
     video.pause();
     setTimeout(function() {
       video.play();
