@@ -21,7 +21,7 @@ video.addEventListener('timeupdate', function() {
   const minutes = new Date().getMinutes();
 
   // Check if time is between 8:12 PM and 8:13 PM
-  if (hours === 20 && minutes === 12 && currentTime >= 265 && currentTime < 266) {
+  if (hours === 8 && minutes === 12 && currentTime >= 265 && currentTime < 266) {
     video.pause();
     setTimeout(function() {
       video.play();
