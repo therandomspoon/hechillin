@@ -15,6 +15,7 @@ function toggleDarkMode() {
 // Set the video to autoplay and loop
 video.autoplay = true;
 video.loop = true;
+video.controls = true;
 
 function playVideoAt8AM() {
   const now = new Date();
